@@ -51,12 +51,6 @@ public class Assignment implements Comparable{
 		
 	}
 
-	
-
-	
-
-
-
 	public Assignment(int id, String name, String description, String dueDate, int daysRemaining,
 			List<StudentCourseDetails> courseDetails) {
 		this.id = id;
@@ -66,12 +60,6 @@ public class Assignment implements Comparable{
 		this.daysRemaining = daysRemaining;
 		this.courseDetails = courseDetails;
 	}
-
-
-
-
-
-
 
 	public int getId() {
 		return id;
@@ -118,16 +106,10 @@ public class Assignment implements Comparable{
 		return courseDetails;
 	}
 
-
-
-
 	public void setCourseDetails(List<StudentCourseDetails> courseDetails) {
 		this.courseDetails = courseDetails;
 	}
-
-
-
-
+	
 	@Override
 	public int compareTo(Object o) {
 		Assignment comAss = (Assignment) o;
